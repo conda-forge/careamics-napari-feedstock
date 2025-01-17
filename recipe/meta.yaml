@@ -1,5 +1,5 @@
 {% set name = "careamics-napari" %}
-{% set version = "0.0.4.2" %}
+{% set version = "0.0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/careamics_napari-{{ version }}.tar.gz
-  sha256: 624778bf6aa21a50a4155abdd2ba0a86e0e770102a8fcd7ce103a19dffe755fa
+  sha256: 8f2f3316c1408608a01d8f356eca0b69a36d3296baf39e297b7b8abaebcf631e
 
 build:
   noarch: python
@@ -45,7 +45,7 @@ about:
   description: |
     CAREamics is a PyTorch library aimed at simplifying the use of Noise2Void and its many
     variants and cousins (CARE, Noise2Noise, N2V2, P(P)N2V, HDN, MicroSplit etc.).
-    
+
     This package provides an interface via the napari image viewer.
   license: BSD-3-Clause
   license_file: LICENSE
