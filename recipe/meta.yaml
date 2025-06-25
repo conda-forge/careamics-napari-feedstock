@@ -27,9 +27,10 @@ requirements:
     - psygnal
     - pyqtgraph
     - napari
-    - careamics[tensorboard]
+    - careamics
+    - tensorboard
     - careamics-portfolio
-    - numcodecs<0.16
+    - numcodecs <0.16
 
 test:
   imports:
