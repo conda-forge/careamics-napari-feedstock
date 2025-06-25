@@ -1,5 +1,5 @@
 {% set name = "careamics-napari" %}
-{% set version = "0.0.4.4" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/careamics_napari-{{ version }}.tar.gz
-  sha256: 8f2f3316c1408608a01d8f356eca0b69a36d3296baf39e297b7b8abaebcf631e
+  sha256: 1c38ae81e831176929c10bc3b4d6df6975ce6fa252cfcfaf7a0a701d864d0905
 
 build:
   noarch: python
@@ -27,8 +27,10 @@ requirements:
     - psygnal
     - pyqtgraph
     - napari
-    - careamics >=0.0.4
+    - careamics
+    - tensorboard
     - careamics-portfolio
+    - numcodecs <0.16
 
 test:
   imports:
