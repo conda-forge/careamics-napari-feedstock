@@ -1,5 +1,5 @@
 {% set name = "careamics-napari" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/careamics_napari-{{ version }}.tar.gz
-  sha256: 6c0f6ed192afe30adef9d493b021155c9738341caf12993a833f4854f3dd8169
+  sha256: 2ac6d6054870b1d8140bd31c52e8a1e3617ced82b6d186826e590e2a9b841168
 
 build:
   noarch: python
