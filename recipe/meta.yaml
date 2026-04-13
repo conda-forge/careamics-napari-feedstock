@@ -1,5 +1,6 @@
 {% set name = "careamics-napari" %}
 {% set version = "0.0.20" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +28,7 @@ requirements:
     - psygnal
     - pyqtgraph
     - napari
-    - careamics
+    - careamics >=0.0.19
     - tensorboard
     - careamics-portfolio
     - numcodecs <0.16
